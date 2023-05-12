@@ -72,85 +72,8 @@
 	
 	
 
-<div class="btns-bg">
-	<div class="PlayEy"></div>
-	<div class="Btn"></div>
-	<div class="Play">
-		<audio id="audios" src="https://music.163.com/song/media/outer/url?id=29999568.mp3"></audio>
-	</div>
-</div>
-<style type='text/css'>
-.PlayEy {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 383px;
-	height: 383px;
-	background:  url(../img/bg_center.png) no-repeat center;
-}
-.Btn {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 25px;
-	height: 25px;
-	background-color: yellow;
-	background: url(../img/btn-bg.png) no-repeat;
-	animation: Btn-bg 3s linear infinite;
-}
-.Play {
-	position: absolute;
-	width: 18px;
-	height: 23px;
-	background: red;
-	background: url(../img/pause.png) no-repeat;
-	transition: .5s;
-}
-.btns-bg {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 30px auto;
-	width: 383px;
-	height: 383px;
-}
-@keyframes Btn-bg {
-	from {}
-	to {
-		transform: rotate(360deg);
-	}
-}
-</style>
-	
-	
-<script type="text/javascript">
-	var i = 0;
-var oPlayEy = document.getElementsByClassName("PlayEy")[0];
-var oPlay = document.getElementsByClassName("Play")[0];
-var audios = document.getElementById('audios');
-oPlay.onclick = function() {
-	var seii = setInterval(function() {
-		(i == 360) ? i = 0 : i++;
-		oPlayEy.style.transform = "rotate(" + i + "deg)";
-		if(audios.paused) {
-			clearInterval(seii)
-		}
-	}, 30);
-	if(audios.paused) {
-		audios.play();
-		oPlay.style.backgroundImage = "url(img/play.png)";
-		oPlay.style.width = 32 + "px";
-		oPlay.style.height = 32 + "px";
-	} else {
-		audios.pause();
-		oPlay.style.backgroundImage = "url(img/pause.png)";
-		oPlay.style.width = 29 + "px";
-		oPlay.style.height = 36 + "px";
-	}
-}
-</script>
-	
+
+<iframe width="102%" height="300" src="https://ss.azad.asia/myn"  scrolling="no" border="0" frameborder="1" framespacing="0" allowtransparency="true" allowfullscreen="true"  style=" border: #233349 1px solid; border-radius: 14px; float: right;" ></iframe>
 	
 	
 	
